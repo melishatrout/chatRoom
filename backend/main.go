@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-
-	"github.com/melishatrout/chatRoom/backend/pkg"
 )
 
 func serveWs(w http.ResponseWriter, r *http.Request) {
@@ -15,7 +13,7 @@ func serveWs(w http.ResponseWriter, r *http.Request) {
 	}
 
 	go websocket.Writer(ws)
-	websocket.Reader(ws)
+	Reader(ws)
 
 }
 
