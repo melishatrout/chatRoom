@@ -2,10 +2,8 @@ package websocket
 
 import (
 	"fmt"
-	"log"
-	"sync"
-
 	"github.com/gorilla/websocket"
+	"log"
 )
 
 type Client struct {
